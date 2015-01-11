@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Open Original Image",
+	"version": "1.0",
+	"permissions": [ "https://twitter.com/*" ],
+	"web_accessible_resources": ["embeded-script.js"],
+	"content_scripts": [
+		{
+			"matches": [ "https://twitter.com/*" ],
+			"js": [ "content-script.js" ],
+			"run_at": "document_end"
+		}
+	]
+}
